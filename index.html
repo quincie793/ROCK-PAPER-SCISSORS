@@ -1,28 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors game</title>
-    <link rel="stylesheet" href="style.css" class="">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Rock Paper Scissors</h1>
-            <div class="scoreboard">
-                <p>Player: <span id="player-score">0</span></p>
-                <p>Computer: <span id="Computer-score">0</span></p>
+    <link rel="stylesheet" href="style.css" class="" />
+  </head>
+  <body>
+    <div class="game-container">
+      <header>
+        <span class="credit"
+          >© 2025 Quincie<a
+            href="https://github.com/quincie793/ROCK-PAPER-SCISSORS.git"
+          ></a
+          >Irene</span
+        >
+        <span class="scoreboard"
+          >computer<span id="computerscore">0</span>
+          <span id="playerscore">0</span>player</span
+        >
+      </header>
+      <main>
+        <div class="top-section">
+          <div class="player-section">
+            <h2>computer</h2>
+            <div class="hand-box">
+              <div class="hand-icon" id="computer-icon"></div>
             </div>
-        </header>
-        <main>
-            <div class="result" id="result">Make your move!</div>
-            <div class="choices">
-                <button class="choice" data-choice="Rock">✊</button>
-                <button class="choice" data-choice="Paper">✋</button>
-                <button class="choice" data-choice="Scissors">✌️</button>
+          </div>
+          <div class="result-section">
+            <h1 id="result">CURRENTLY DRAW</h1>
+          </div>
+          <div class="player-section">
+            <h2>player</h2>
+            <div class="hand-box">
+              <div class="hand-icon" id="player-icon"></div>
             </div>
-        </main>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="choice-btn" data-choice="Rock">✊</button>
+          <button class="choice-btn" data-choice="Paper">✋</button>
+          <button class="choice-btn" data-choice="Scissors">✌️</button>
+        </div>
+      </main>
     </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

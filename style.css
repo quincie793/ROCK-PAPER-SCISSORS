@@ -10,61 +10,114 @@ html {
 }
 
 body {
-  font-family:'poppins',sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   font-size: 1.6rem;
-  background: linear-gradient(purple ,pink ,blue);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  width: 100vw;
   height: 100vh;
-  color: rgb(0, 4, 255);
+  background-color: #0dc00dad;
 }
 
 .container {
-    text-align: center;
-    width: 95%;
-    max-width: 60rem;
-    background: rgba(233, 127, 176, 0.897);
-    padding: 5rem;
-    border-radius: 1rem;
-
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 6rem;
 }
 
-header h1 {
-  font-size: 4rem;
-  margin-bottom: 4rem;
+header {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #004400;
+}
+.credit {
+  color: #0077cc;
+  font-weight: bold;
 }
 
 .scoreboard {
+  font-family: monospace;
+  color: #000;
+}
+
+.top-section {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+.player-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.player-section h2 {
   font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #000;
 }
 
-.result {
-  font-size: 2rem;
-  margin: 1.5rem 0;
-  font-weight: 600;
+.hand-box {
+  width: 8rem;
+  height: 8rem;
+  border: 0.3rem dashed #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
 }
 
-.choices {
+.result-section {
+  background-color: #f9d857;
+  padding: 1.5rem 0;
+  width: 100vw;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.result-section h1 {
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.buttons {
   display: flex;
   justify-content: space-around;
+  margin: 5rem;
+  gap: 3rem;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
 }
 
-.choice {
-  background: #8e6ceb;
-  color: #ffffff;
+.choice-btn {
+  background-color: #fff;
   border: none;
-  padding: 1rem 3rem;
+  border-radius: 0.8rem;
+  padding: 2rem 2rem;
+  font-size: 3rem;
   cursor: pointer;
-  border-radius: 0.6rem;
-  font-size: 1.6rem;
-}
-.choice:hover {
-  background: #39ddcf;
-  transform: scale(1.05);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
